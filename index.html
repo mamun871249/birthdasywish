@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10071e">
+  <title>Best Friend Virus Detected 🎂</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="confetti"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <div class="brand">💗 BFF.EXE</div>
+    <button id="muteBtn" class="mute-btn" type="button">🔊 Sound: OFF</button>
+  </header>
+
+  <main>
+    <!-- SCREEN 1: HACKING INTRO -->
+    <section class="screen active" id="intro">
+      <div class="panel intro-panel">
+        <div class="warning">⚠️ CLASSIFIED BEST FRIEND REPORT ⚠️</div>
+        <div class="big-emoji">🖥️</div>
+        <p class="eyebrow">UNKNOWN DRAMA DETECTED</p>
+        <h1>BEST FRIEND<br><span>VIRUS DETECTED!</span></h1>
+        <p class="muted">A suspicious human has been detected in our friendship system.</p>
+
+        <div class="terminal">
+          <p id="terminalText">Initializing friendship scan...</p>
+          <div class="progress-track">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <small id="progressLabel">System starting: 0%</small>
+        </div>
+
+        <button id="scanBtn" class="btn primary" type="button">
+          SCAN THE DRAMA QUEEN 🚨
+        </button>
+        <p class="tiny">⚠️ Warning: excessive cuteness and drama may be detected.</p>
+      </div>
+    </section>
+
+    <!-- SCREEN 2: ROAST REPORT -->
+    <section class="screen" id="roast">
+      <div class="panel">
+        <p class="eyebrow">SCAN COMPLETE ✅</p>
+        <h2>Official Roast Report 😂</h2>
+        <div class="report-icon">🤡</div>
+        <h3 id="friendHeading">Your Bestie</h3>
+
+        <div class="stats">
+          <div class="stat"><span>Drama</span><strong>999%</strong></div>
+          <div class="stat"><span>Attitude</span><strong>MAX</strong></div>
+          <div class="stat"><span>Brain loading</span><strong>2%</strong></div>
+        </div>
+
+        <div class="joke-box" id="roastText">
+          Loading highly confidential roast...
+        </div>
+        <button class="btn secondary" id="anotherRoast" type="button">
+          ROAST AGAIN 🔥
+        </button>
+        <button class="btn primary" data-next="quiz" type="button">
+          NEXT: FRIENDSHIP TEST 👉
+        </button>
+      </div>
+    </section>
+
+    <!-- SCREEN 3: FRIENDSHIP QUIZ -->
+    <section class="screen" id="quiz">
+      <div class="panel">
+        <p class="eyebrow">FRIENDSHIP EXAMINATION 🧪</p>
+        <h2>Let's Test Your Friendship!</h2>
+        <p class="muted">Wrong answers may cause a friendship software update. 😂</p>
+
+        <div class="quiz-card">
+          <p class="question-count" id="questionCount">Question 1 of 3</p>
+          <h3 id="questionText">Loading question...</h3>
+          <div id="answerOptions" class="answer-options"></div>
+          <p id="quizFeedback" class="feedback" aria-live="polite"></p>
+          <button id="nextQuestion" class="btn primary hidden" type="button">
+            NEXT QUESTION ➡️
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 4: ESCAPING GIFT -->
+    <section class="screen" id="gift">
+      <div class="panel">
+        <p class="eyebrow">TOP SECRET DELIVERY 🎁</p>
+        <h2>Your Birthday Gift Is Here!</h2>
+        <p class="muted">Try to catch the gift. If you can. 😈</p>
+
+        <div class="gift-area">
+          <button id="giftBox" class="gift-box" type="button" aria-label="Open the birthday gift">
+            🎁
+          </button>
+        </div>
+        <p id="giftMessage" class="joke-box" aria-live="polite">
+          Your gift is shy. Tap it to open!
+        </p>
+        <p id="giftCounter" class="tiny">Attempts: 0</p>
+
+        <button id="revealGift" class="btn secondary" type="button">
+          OKAY, STOP PLAYING 😭
+        </button>
+        <div id="giftReveal" class="gift-reveal hidden">
+          <div class="big-emoji">💌</div>
+          <h3>YOUR REAL GIFT</h3>
+          <p>A lifetime supply of my friendship, unlimited laughter, and free emotional support. 😂💗</p>
+          <button class="btn primary" data-next="cake" type="button">
+            LET'S CUT THE CAKE 🎂
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREEN 5: CAKE CELEBRATION -->
+    <section class="screen" id="cake">
+      <div class="panel">
+        <p class="eyebrow">BIRTHDAY CELEBRATION 🎉</p>
+        <h2>Make a Wish, Birthday Queen!</h2>
+        <p class="muted">Tap the cake to blow out the candles.</p>
+
+        <button id="cakeArt" class="cake" type="button" aria-label="Blow out birthday candles">
+          <span class="flames"><i></i><i></i><i></i></span>
+          <span class="candles"><i></i><i></i><i></i></span>
+          <span class="cake-top"></span>
+          <span class="cake-body">🎂</span>
+        </button>
+
+        <p id="cakeMessage" class="joke-box" aria-live="polite">
+          Warning: birthday calories don't count today!
+        </p>
+        <button id="celebrateBtn" class="btn primary" type="button">
+          PARTY TIME!!! 🥳
+        </button>
+        <button class="btn secondary" data-next="final" type="button">
+          ONE LAST SURPRISE 💗
+        </button>
+      </div>
+    </section>
+
+    <!-- SCREEN 6: EMOTIONAL ENDING -->
+    <section class="screen" id="final">
+      <div class="panel final-panel">
+        <div class="heart-icon">💖</div>
+        <p class="eyebrow">JOKES ASIDE...</p>
+        <h1>Happy Birthday,<br><span id="finalName">Bestie!</span></h1>
+
+        <div class="letter">
+          <p>Dear bestie, 💗</p>
+          <p>
+            Happy Birthday to the most annoying, funniest, and most special
+            person in my life! 😂
+          </p>
+          <p>
+            I roast you because you're my favourite person to annoy.
+            Behind every joke, there's a friend who genuinely wants to see
+            you happy.
+          </p>
+          <p>
+            May your life be filled with happiness, success, beautiful
+            memories, and people who love you for who you are.
+          </p>
+          <p>
+            Never stop smiling, never stop dreaming, and never forget how
+            special you are. No matter how much I roast you, I'll always
+            wish the best for you. 🫶
+          </p>
+          <p class="signature">Forever your partner in crime! 💌</p>
+        </div>
+
+        <button id="finalParty" class="btn primary" type="button">
+          CELEBRATE AGAIN 🎉
+        </button>
+        <p class="tiny">Made with 50% love, 50% roasting, and 100% friendship. 😂</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>MADE WITH 💗 & A LITTLE BIT OF CHAOS</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
